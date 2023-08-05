@@ -1,0 +1,30 @@
+#baslik{
+    text-align: center;
+    color: cornflowerblue;
+}
+#metin{
+    font-size: 16px;
+    font-style: italic;
+}
+.kutu{
+    text-align: center;
+    border-style: solid;
+    border-color: cornflowerblue;
+    border-width: 1px;
+    border-radius: 40px 0px;
+    min-height: 300px;
+}
+.giris{
+    position: relative;
+    margin-bottom: 5px;
+}
+#tracks{
+    border-style: dashed;
+    border-width: 1px;
+    border-color: cornflowerblue;
+    width: 50%;
+    margin: auto;
+}
+#icbaslik{
+    font-weight: bold;
+}
