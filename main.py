@@ -28,6 +28,12 @@ def get_token():
     token = json_result["access_token"]
     return token
 
+
+def get_artist_name():
+    artist_name = input("Enter an artist name: ")
+    return artist_name
+artist_name = get_artist_name()
+
 def get_auth_header(token):
     return{"Authorization": "Bearer " + token}
 
@@ -54,7 +60,7 @@ def get_songs_by_artist(token, artist_id):
 
 
 token = get_token()
-result = search_for_artist(token, "ACDC")
+result = search_for_artist(token, artist_name)
 artist_id = result["id"]
 songs = get_songs_by_artist(token, artist_id)
 
